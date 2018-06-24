@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <div class="burger-menu">
+        <div class="burger">
+            <div class="burger-toggle">Create a reminder</div>
+            <div class="burger-body open" id="1">
+                {{ form_start(form) }}
+                {{ form_widget(form) }}
+                {{ form_end(form) }}
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
