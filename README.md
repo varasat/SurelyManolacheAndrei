@@ -29,6 +29,10 @@ The reminder object is composed of the following:
 - date_posted : the day the reminder was created. This is mostly for logging purposes
 
 ## How to test 
+go to links : 
+Reminder list : http://localhost:8000/reminder/list
+Reminder create : http://localhost:8000/reminder/create
+
 - Go to : http://localhost:8000/
 - click on "Create a new reminder"
 - fill in the required fields (The app will tell you if you forgot any field)
