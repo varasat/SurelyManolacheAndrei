@@ -1,12 +1,35 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    <div class="burger-menu">
+    <div class="burger-list">
         <div class="burger">
-            <div class="burger-toggle">Welcome to Andrei Manolache's technical test</div>
+            <div class="burger-toggle">List of all Reminders</div>
             <div class="burger-body open">
-                <a href="/reminder/list">See All Reminders</a>
-                <br/>
-                <a href="/reminder/create">Create a new reminder</a>
+                <table style="width:100%">
+                    <tr>
+                        <td>ID</td>
+                        <td>Reminder</td>
+                        <td>Deadline</td>
+                        <td>Created On</td>
+                        <td>Options</td>
+                    </tr>
+                    {% if reminders is not empty %}
+                        {% for reminder in reminders %}
+                            <tr>
+                                <td>{{ reminder.id }}</td>
+                                <td>{{ reminder.comment }}</td>
+                                <td>{{ reminder.deadline |date }}</td>
+                                <td>{{ reminder.datePosted |date }}</td>
+                                <td><a href="/reminder/edit/{{ reminder.id }}">Edit</a>
+                                    <a href="/reminder/delete/{{ reminder.id }}">Delete</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    {% else %}
+
+                    {% endif %}
+
+
+                </table>
             </div>
         </div>
     </div>
