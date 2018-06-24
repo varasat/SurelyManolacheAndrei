@@ -22,10 +22,19 @@ The following technology stack was used :
 
 Version of Symfony used : 3.4
 
+The reminder object is composed of the following: 
+- id : an identification field 
+- comment : the action needed to be taken by the user
+- deadline : the deadline for which the action must be taken
+- date_posted : the day the reminder was created. This is mostly for logging purposes
 
+Due to some time constraints there are still improvements that can be done to this project. 
+We can : 
+- generalize the form creator to be used for the Edit and Create actions
+- Add some JS/CSS to the listing to allow multiple types of ordering dependent on the header clicked (e.g. order by id/deadline etc)
+- create proper ORM XML mappings, repositories and abstract classes for the Reminders 
+- use grunt to manage the CSS and JS 
 
-
-Use best practices where possible and add comments where you are aware of any technical shortcomings.
 
  
 
