@@ -1,6 +1,6 @@
 # SurelyManolacheAndrei
 
-##Documentation 
+## Documentation 
 ### Setup 
 - Download this git repository
 - Setup Symfony 3.4 : I included the symfony install file for ease of use
@@ -28,6 +28,20 @@ The reminder object is composed of the following:
 - deadline : the deadline for which the action must be taken
 - date_posted : the day the reminder was created. This is mostly for logging purposes
 
+## How to test 
+- Go to : http://localhost:8000/
+- click on "Create a new reminder"
+- fill in the required fields (The app will tell you if you forgot any field)
+- click on "Create reminder"
+- Your reminder should have been created and you redirected to a generic page
+- click on "See all reminders"
+- you should see your reminder in the list 
+- click on Edit and edit your reminder
+- go back to "See all reminders"
+- click on "Delete"
+- your reminder is now deleted 
+
+
 Due to some time constraints there are still improvements that can be done to this project. 
 We can : 
 - generalize the form creator to be used for the Edit and Create actions
@@ -38,4 +52,3 @@ We can :
 
  
 
-Share your solution using a GitHub or BitBucket repo for review”
