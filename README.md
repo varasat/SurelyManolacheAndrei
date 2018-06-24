@@ -49,10 +49,10 @@ Reminder create : http://localhost:8000/reminder/create
 Due to some time constraints there are still improvements that can be done to this project. 
 We can : 
 - generalize the form creator to be used for the Edit and Create actions
-- Add some JS/CSS to the listing to allow multiple types of ordering dependent on the header clicked (e.g. order by id/deadline etc)
+- add some JS/CSS to the listing to allow multiple types of ordering dependent on the header clicked (e.g. order by id/deadline etc)
 - create proper ORM XML mappings, repositories and abstract classes for the Reminders 
 - use grunt to manage the CSS and JS 
-
+- add some pagination to the listing page 
 
  
 
